@@ -7,6 +7,26 @@
     <title></title>
   </head>
   <body>
+    <a href="/">HOME</a>
+
+    <h1>THESE ARE THE AUTHORS</h1>
+
+    <ul>
+      <% authors.forEach(function(curr){ %>
+
+        <li>
+
+          <a href="/authors/<%=curr._id%>"><%=curr.name%></a>
+
+        </li>
+
+      <% }) %>
+
+    </ul>
+
+
+
+
 
 
 

@@ -7,6 +7,31 @@
     <title></title>
   </head>
   <body>
+    <a href="/">HOME</a>
+
+
+    <h1><%=author.name%></h1>
+    <h2>THEIR ARTICLES:</h2>
+    <ul>
+
+      <% author.articles.forEach(function(curr){ %>
+
+        <li>
+
+          <a href="/articles/<%=curr.id%>"><%=curr.title%></a>
+
+        </li>
+
+      <% }) %>
+
+
+    </ul>
+
+
+    <a href="/articles/<%=author._id%>/new">CREATE NEW ARTICLE</a>
+
+
+
 
 
 

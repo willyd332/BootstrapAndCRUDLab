@@ -7,6 +7,17 @@
     <title></title>
   </head>
   <body>
+    <a href="/">HOME</a>
+
+    <h1>NEW ARTICLE</h1>
+    <h3>created by <%=author.name%></h3>
+
+    <form action="/articles/<%=author._id%>" method="post">
+      <input type="text" name="title" value="TITLE">
+      <input type="text" name="content" value="TYPE HERE">
+      <button type="submit">SUBMIT</button>
+    </form>
+
 
 
 
