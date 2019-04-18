@@ -12,7 +12,11 @@ app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 
+const authorController = require('./controllers/authorController');
+const articleController = require('./controllers/articleController');
 
+app.use('/authors', authorController);
+app.use('/articles', articleController);
 
 
 
